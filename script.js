@@ -20,7 +20,6 @@ c.height = window.innerHeight;
 c.width = window.innerWidth;
 
 // the characters
-// var konkani  = "゠アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレワヰヱヲンヺ・ーヽヿ0123456789"
 var binary = "01";
 // converting the string into an array of single characters
 var characters = binary.split("");
