@@ -2,7 +2,7 @@
   "matrixColor": {
     "text": "Font Color",
     "type": "color",
-    "value": "#00FF46"
+    "value": "#FF0000"
   },
   "rainbowSpeed": {
     "max": 100,

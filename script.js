@@ -20,9 +20,10 @@ c.height = window.innerHeight;
 c.width = window.innerWidth;
 
 // the characters
-var konkani  = "゠アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレワヰヱヲンヺ・ーヽヿ0123456789"
+// var konkani  = "゠アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレワヰヱヲンヺ・ーヽヿ0123456789"
+var binary = "01";
 // converting the string into an array of single characters
-var characters = konkani.split("");
+var characters = binary.split("");
 var font_size = 14;
 var columns = c.width/font_size;    // number of columns for the rain
 var gradient = ctx.createLinearGradient(0,10, 0,200);
@@ -50,7 +51,7 @@ function draw() {
         // background color
         ctx.fillStyle = "rgba(10,10,10, 1)";
         ctx.fillRect(i * font_size, drops[i] * font_size,font_size,font_size);
-        // a random chinese character to print
+        // a random binary character to print
         var text = characters[Math.floor(Math.random() * characters.length)];
         // x = i * font_size, y = value of drops[i] * font_size
 
